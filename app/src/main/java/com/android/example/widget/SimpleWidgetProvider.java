@@ -17,7 +17,8 @@ public class SimpleWidgetProvider extends AppWidgetProvider {
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         final int count = appWidgetIds.length;
 
-        for (int i = 0; i < count; i++) {
+        for (int i = 0; i < count; i++)
+        {
             int widgetId = appWidgetIds[i];
             String number = String.format("%03d", (new Random().nextInt(900) + 100));
 
